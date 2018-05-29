@@ -1,4 +1,379 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP8266:ESP-13-WROOM-02 U1
+U 1 1 5B0DA6B7
+P 2900 3850
+F 0 "U1" H 2875 4615 50  0000 C CNN
+F 1 "ESP-13-WROOM-02" H 2875 4524 50  0000 C CNN
+F 2 "ESP8266:ESP-13-WROOM-02" H 2800 3850 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 2800 3850 50  0001 C CNN
+	1    2900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5B0DB00B
+P 5700 4500
+F 0 "#PWR0101" H 5700 4250 50  0001 C CNN
+F 1 "GND" H 5705 4327 50  0000 C CNN
+F 2 "" H 5700 4500 50  0001 C CNN
+F 3 "" H 5700 4500 50  0001 C CNN
+	1    5700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3950 5700 4050
+Wire Wire Line
+	5700 3950 5800 3950
+Wire Wire Line
+	5800 4050 5700 4050
+Connection ~ 5700 4050
+Wire Wire Line
+	5800 4150 5700 4150
+Connection ~ 5700 4150
+Wire Wire Line
+	5700 4150 5700 4250
+Wire Wire Line
+	5800 4250 5700 4250
+Connection ~ 5700 4250
+Wire Wire Line
+	5700 4250 5700 4350
+Wire Wire Line
+	5800 4350 5700 4350
+Connection ~ 5700 4350
+Wire Wire Line
+	5700 4350 5700 4450
+Wire Wire Line
+	5800 4450 5700 4450
+Wire Wire Line
+	5700 4050 5700 4150
+Wire Wire Line
+	5800 3250 5700 3250
+Wire Wire Line
+	5700 3250 5700 3350
+Wire Wire Line
+	5700 3350 5800 3350
+$Comp
+L power:GND #PWR0102
+U 1 1 5B0DB470
+P 5700 3400
+F 0 "#PWR0102" H 5700 3150 50  0001 C CNN
+F 1 "GND" H 5705 3227 50  0000 C CNN
+F 2 "" H 5700 3400 50  0001 C CNN
+F 3 "" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3350 5700 3400
+Connection ~ 5700 3350
+Wire Wire Line
+	5700 4500 5700 4450
+Connection ~ 5700 4450
+$Comp
+L power:GND #PWR0103
+U 1 1 5B0DB8FA
+P 6500 4850
+F 0 "#PWR0103" H 6500 4600 50  0001 C CNN
+F 1 "GND" H 6505 4677 50  0000 C CNN
+F 2 "" H 6500 4850 50  0001 C CNN
+F 3 "" H 6500 4850 50  0001 C CNN
+	1    6500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5B0DBAE6
+P 6600 3750
+F 0 "#PWR0104" H 6600 3600 50  0001 C CNN
+F 1 "+3.3V" H 6615 3923 50  0000 C CNN
+F 2 "" H 6600 3750 50  0001 C CNN
+F 3 "" H 6600 3750 50  0001 C CNN
+	1    6600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3050 5700 3050
+Wire Wire Line
+	5700 3150 5800 3150
+Text Label 5700 3150 0    50   ~ 0
+SDA
+Text Label 5700 3050 0    50   ~ 0
+SCL
+Entry Wire Line
+	5600 2950 5700 3050
+Entry Wire Line
+	5600 3050 5700 3150
+Wire Wire Line
+	1900 3850 1800 3850
+Wire Wire Line
+	1900 3950 1800 3950
+Text Label 1800 3850 0    50   ~ 0
+SDA
+Text Label 1800 3950 0    50   ~ 0
+SCL
+Entry Wire Line
+	1700 3750 1800 3850
+Entry Wire Line
+	1700 3850 1800 3950
+Entry Bus Bus
+	1600 3550 1700 3650
+Wire Wire Line
+	6500 2450 6500 2750
+Entry Bus Bus
+	5500 2750 5600 2850
+Entry Wire Line
+	1000 7350 1100 7250
+Entry Wire Line
+	1300 7350 1400 7250
+$Comp
+L Device:R R1
+U 1 1 5B0DFE1B
+P 1100 7000
+F 0 "R1" H 1170 7046 50  0000 L CNN
+F 1 "10k" H 1170 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 1030 7000 50  0001 C CNN
+F 3 "~" H 1100 7000 50  0001 C CNN
+	1    1100 7000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B0DFE91
+P 1400 7000
+F 0 "R2" H 1470 7046 50  0000 L CNN
+F 1 "10k" H 1470 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 1330 7000 50  0001 C CNN
+F 3 "~" H 1400 7000 50  0001 C CNN
+	1    1400 7000
+	1    0    0    1   
+$EndComp
+Text Label 1100 7250 0    50   ~ 0
+SDA
+Wire Wire Line
+	1100 7250 1100 7150
+Wire Wire Line
+	1400 7250 1400 7150
+Text Label 1400 7250 0    50   ~ 0
+SCL
+Entry Bus Bus
+	800  7450 900  7350
+Wire Wire Line
+	1400 6850 1400 6750
+Wire Wire Line
+	1100 6750 1100 6850
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5B0E37F9
+P 1250 6750
+F 0 "#PWR0105" H 1250 6600 50  0001 C CNN
+F 1 "+3.3V" H 1265 6923 50  0000 C CNN
+F 2 "" H 1250 6750 50  0001 C CNN
+F 3 "" H 1250 6750 50  0001 C CNN
+	1    1250 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 6750 1250 6750
+Connection ~ 1250 6750
+Wire Wire Line
+	1250 6750 1400 6750
+$Sheet
+S 9700 2900 700  500 
+U 5B0F247D
+F0 "LED Strip 0" 50
+F1 "led-strip.sch" 50
+F2 "PWM0" I L 9700 3000 50 
+F3 "PWM1" I L 9700 3150 50 
+F4 "PWM2" I L 9700 3300 50 
+$EndSheet
+$Sheet
+S 9700 3600 700  500 
+U 5B0F6824
+F0 "LED Strip 1" 50
+F1 "led-strip.sch" 50
+F2 "PWM0" I L 9700 3700 50 
+F3 "PWM1" I L 9700 3850 50 
+F4 "PWM2" I L 9700 4000 50 
+$EndSheet
+$Comp
+L Driver_LED:PCA9685PW U2
+U 1 1 5B0DA7D4
+P 6500 3750
+F 0 "U2" H 6500 4928 50  0000 C CNN
+F 1 "PCA9685PW" H 6500 4837 50  0000 C CNN
+F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 6525 2775 50  0001 L CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 6100 4450 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+Text Label 7200 3550 0    50   ~ 0
+LED1.2
+Text Label 7200 3450 0    50   ~ 0
+LED1.1
+Text Label 7200 3350 0    50   ~ 0
+LED1.0
+Text Label 7200 3250 0    50   ~ 0
+LED0.2
+Text Label 7200 3150 0    50   ~ 0
+LED0.1
+Text Label 7200 3050 0    50   ~ 0
+LED0.0
+Text Label 7200 3850 0    50   ~ 0
+LED2.2
+Text Label 7200 3750 0    50   ~ 0
+LED2.1
+Text Label 7200 3650 0    50   ~ 0
+LED2.0
+Wire Wire Line
+	7200 3050 7500 3050
+Wire Wire Line
+	7200 3150 7500 3150
+Wire Wire Line
+	7200 3250 7500 3250
+Wire Wire Line
+	7200 3350 7500 3350
+Wire Wire Line
+	7200 3450 7500 3450
+Wire Wire Line
+	7200 3550 7500 3550
+Wire Wire Line
+	7200 3650 7500 3650
+Wire Wire Line
+	7200 3750 7500 3750
+Wire Wire Line
+	7200 3850 7500 3850
+Text Label 9400 4000 0    50   ~ 0
+LED1.2
+Text Label 9400 3850 0    50   ~ 0
+LED1.1
+Text Label 9400 3700 0    50   ~ 0
+LED1.0
+Text Label 9400 3300 0    50   ~ 0
+LED0.2
+Text Label 9400 3150 0    50   ~ 0
+LED0.1
+Text Label 9400 3000 0    50   ~ 0
+LED0.0
+Text Label 9400 4700 0    50   ~ 0
+LED2.2
+Text Label 9400 4550 0    50   ~ 0
+LED2.1
+Text Label 9400 4400 0    50   ~ 0
+LED2.0
+Wire Wire Line
+	9700 3000 9400 3000
+Wire Wire Line
+	9700 3150 9400 3150
+Wire Wire Line
+	9700 3300 9400 3300
+Wire Wire Line
+	9700 3700 9400 3700
+Wire Wire Line
+	9700 3850 9400 3850
+Wire Wire Line
+	9700 4000 9400 4000
+Wire Wire Line
+	9700 4700 9400 4700
+Wire Wire Line
+	9700 4550 9400 4550
+Wire Wire Line
+	9700 4400 9400 4400
+Entry Wire Line
+	9300 3600 9400 3700
+Entry Wire Line
+	9300 3750 9400 3850
+Entry Wire Line
+	9300 3900 9400 4000
+Entry Wire Line
+	9300 4300 9400 4400
+Entry Wire Line
+	9300 4450 9400 4550
+Entry Wire Line
+	9300 4600 9400 4700
+Entry Wire Line
+	9300 3200 9400 3300
+Entry Wire Line
+	9300 3050 9400 3150
+Entry Wire Line
+	9300 2900 9400 3000
+Entry Wire Line
+	7500 3050 7600 3150
+Entry Wire Line
+	7500 3150 7600 3250
+Entry Wire Line
+	7500 3250 7600 3350
+Entry Wire Line
+	7500 3350 7600 3450
+Entry Wire Line
+	7500 3450 7600 3550
+Entry Wire Line
+	7500 3550 7600 3650
+Entry Wire Line
+	7500 3650 7600 3750
+Entry Wire Line
+	7500 3750 7600 3850
+Entry Wire Line
+	7500 3850 7600 3950
+Entry Bus Bus
+	9200 2650 9300 2750
+Entry Bus Bus
+	7600 4050 7700 4150
+$Sheet
+S 9700 4300 700  500 
+U 5B0F60EF
+F0 "LED Strip 2" 50
+F1 "led-strip.sch" 50
+F2 "PWM0" I L 9700 4400 50 
+F3 "PWM1" I L 9700 4550 50 
+F4 "PWM2" I L 9700 4700 50 
+$EndSheet
+Text GLabel 7300 4550 2    50   Input ~ 0
+Trigger
+Wire Wire Line
+	7300 4550 7200 4550
+Wire Wire Line
+	7200 3950 7300 3950
+Wire Wire Line
+	7200 4050 7300 4050
+Wire Wire Line
+	7200 4150 7300 4150
+Wire Wire Line
+	7200 4250 7300 4250
+Wire Wire Line
+	7200 4350 7300 4350
+Wire Wire Line
+	7200 4450 7300 4450
+NoConn ~ 7300 3950
+NoConn ~ 7300 4050
+NoConn ~ 7300 4150
+NoConn ~ 7300 4250
+NoConn ~ 7300 4350
+NoConn ~ 7300 4450
+Text Notes 1400 6450 2    50   ~ 10
+I2C Bus
+Wire Bus Line
+	1700 3650 1700 3850
+Wire Bus Line
+	900  7350 1300 7350
+Wire Bus Line
+	5600 2850 5600 3050
+Wire Bus Line
+	9300 2750 9300 4600
+Wire Bus Line
+	7600 3150 7600 4050
 $EndSCHEMATC
