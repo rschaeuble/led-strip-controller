@@ -1,6 +1,36 @@
 = LED Strip Controller
 
+NOTE: Right now, only hardware schematics are available. Both PCB layout and the firmware source code will follow soon.
+
 An LED strip controller for up to three RGB[W] LED strips, controlled over WiFi + MQTT.
+
+== Features
+
+Up to three independently controllable LED strips: ::
++
+--
+When decorating shelves, TV racks or similar with LED strips, having several
+shorter strips glowing in different colors can look nicer than having one longer strip.
+However, with usual LED strip controllers, each strip requires its own controller plus power supply. In the end, all those small boxes and their
+power bricks don't really look all that pretty.
+
+With this controller, three separate LED strips can be driven with just one small box and its power brick.
+--
+
+MQTT interface: ::
++
+--
+The controller connects (via WiFi) to an MQTT broker, from which it receives
+commands and to where it posts its current state.
+
+Right now, the controller supports the following message formats:
+
+* https://www.home-assistant.io/components/light.mqtt_json/[MQTT JSON Light], with support for brightness, RGB colors and white value.
+
+Support for other message formats (e.g. https://www.home-assistant.io/components/light.mqtt/[MQTT Light])
+might follow later.
+
+--
 
 
 == Documentation
