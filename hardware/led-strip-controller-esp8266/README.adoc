@@ -65,7 +65,7 @@ https://www.mouser.de/ProductDetail/CUI/VXO7803-1000?qs=sGAEpiMZZMsc0tfZmXiUnQ%2
 |VX7803-1000
 |CUI
 |https://www.cui.com/product/resource/digikeypdf/vx78-1000.pdf[Datasheet]
-|https://www.digikey.de/product-detail/de/cui-inc/VX7803-1000/102-4252-ND/7350291
+|https://www.digikey.de/product-detail/de/cui-inc/VX7803-1000/102-4252-ND/7350291[Digi-Key]
 |2,80{nbsp}€
 |
 
