@@ -1,8 +1,15 @@
 = LED Strip Controller
 
-NOTE: Right now, only hardware schematics are available. Both PCB layout and the firmware source code will follow soon.
-
 An LED strip controller for up to three RGB[W] LED strips, controlled over WiFi + MQTT.
+
+
+== Current State
+
+* Hardware
+** Circuit schematic: nearly complete (for an initial version); some lines required for firmware programming are still missing.
+** PCB layout: not yet started.
+* Software: prototype exists; will be released in the following weeks after some cleanup and polishing. 
+
 
 == Features
 
