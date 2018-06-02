@@ -1,0 +1,30 @@
+= LED Strip Controller
+
+An LED strip controller for up to three RGB[W] LED strips, controlled over WiFi + MQTT.
+
+
+== Documentation
+
+* Hardware: link:hardware/led-strip-controller-esp8266/README.adoc[led-strip-controller-esp8266].
+
+
+== Licenses
+
+
+=== Software
+
+The software in this repository, with the exception of included third-party works, is licensed under
+the link:LICENSE_software.txt[MIT license].
+
+
+=== Hardware
+
+The hardware designs (schematics, PCB layouts, symbols and footprints etc.) in this repository,
+with the exception of included third-party works, are licensed under the
+link:http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+
+=== Third-Party Works
+
+Included third-party works (in the directory `3rd-party`) are licensed under their own terms.
+Please check the respective licenses.

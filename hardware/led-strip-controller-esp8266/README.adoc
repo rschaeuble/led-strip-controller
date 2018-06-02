@@ -1,0 +1,143 @@
+= ESP8266 based LED Strip Controller
+:toc:
+:sectnums:
+:icons: font
+
+== Main Components
+
+ESP-WROOM-02::
++
+--
+Microcontroller with built-in WiFi.
+
+This module was chosen over the bare-bones ESP8266 chip because it is much simpler to integrate.
+--
+
+PCA9685::
++
+--
+PWM LED controller with 16 channels and I^2^C bus interface.
+
+As the ESP8266 does not have enough pins to drive 12 LED channels (3 * RGBW), a dedicated chip has to do this work.
+--
+
+
+== Power Supply
+
+The circuit consists of two power nets: a 12{nbsp}V net for the LED strips and a 3.3{nbsp}V net for everything else.
+
+The 12{nbsp}V are provided by an external power supply. The LED strips are directly connected to this power rail.
+
+The 3.3{nbsp}V are provided by an on-circuit power regulator whose input is connected to the 12{nbsp}V rail.
+With a voltage difference of about 9{nbsp}V and up to 500{nbsp}mA current draw by the ESP8266 alone,
+a linear regulator is too inefficient, so a switching mode regulator is used.
+
+
+.Current draw of individual components:
+* ESP-WROOM-02: 500{nbsp}mA
+* PCA9685: 10{nbsp}mA (just the chip, without any driven LEDs)
+* One or two status LEDs: 40{nbsp}mA
+
+Adding some buffer, an 800{nbsp}mA power supply should suffice easily.
+
+
+== Design Consideration
+
+This section is collection of various design considerations.
+
+=== Switch Mode Power Supply: build your own or buy (OPEN)
+
+As this is my first real hardware project and given my complete lack of experience with switch mode power supplies,
+I ruled out building my own regulator circuit (e.g. based on LM2595 or LM2675).
+Instead, a all-in-one regulator module will be used.
+
+.Module Candidates
+[cols="1,1,1,1a,1,1a"]
+|===
+|Name |Manufacturer |Datasheet |Distributor Link |Price |Notes
+
+|VXO7803-1000
+|CUI
+|https://www.cui.com/product/resource/digikeypdf/vxo78-1000.pdf[Datasheet]
+|https://www.digikey.de/product-detail/de/cui-inc/VXO7803-1000/102-4257-ND/7350296[Digi-Key],
+https://www.mouser.de/ProductDetail/CUI/VXO7803-1000?qs=sGAEpiMZZMsc0tfZmXiUnQ%252bwKZhbvwnu%252bcROBF%2f6Q16XdELjoC0Jhg%3d%3d[Mouser]
+|2.22-2.35{nbsp}€
+|
+
+|VX7803-1000
+|CUI
+|https://www.cui.com/product/resource/digikeypdf/vx78-1000.pdf[Datasheet]
+|https://www.digikey.de/product-detail/de/cui-inc/VX7803-1000/102-4252-ND/7350291
+|2,80{nbsp}€
+|
+
+|R-78E3.3-1.0
+|Recom Power
+|https://www.recom-power.com/pdf/Innoline/R-78Exx-1.0.pdf[Datasheet]
+|https://www.digikey.de/product-detail/de/recom-power/R-78E3.3-1.0/945-2409-5-ND/5327711[Digi-Key],
+https://www.mouser.de/ProductDetail/RECOM-Power/R-78E33-10?qs=sGAEpiMZZMsc0tfZmXiUnbaEjpYStdRIFUgifFXFkklVvzJFhjySMg%3d%3d[Mouser]
+|2,67-2,80{nbsp}€
+|
+
+|MEZD71201A-F
+|Monolithic Power Systems
+|http://www.monolithicpower.com/pub/media/document/mEZD71201Ar1.5.pdf[Datasheet]
+|https://www.digikey.de/product-detail/de/monolithic-power-systems-inc/MEZD71201A-F/1589-1457-ND/6823820[Digi-Key],
+https://www.mouser.de/ProductDetail/Monolithic-Power-Systems-MPS/mEZD71201A-F?qs=sGAEpiMZZMsc0tfZmXiUnQ%252bwKZhbvwnunWq9oxKi2Cb1IKU3wZf98Q%3d%3d[Mouser]
+|2,76-2,90{nbsp}€
+|
+
+|TR10S3V3
+|XP Power
+|https://www.xppower.com/Portals/0/pdfs/SF_TR10.pdf[Datasheet]
+|https://www.digikey.de/product-detail/de/xp-power/TR10S3V3/1470-3970-ND/6707494[Digi-Key]
+|3,40{nbsp}€
+|
+
+|===
+
+Product search:
+
+* https://www.digikey.de/products/de/power-supplies-board-mount/dc-dc-converters/922?k=&pkeyword=&FV=8f40064%2C8f40013%2C8f40014%2C8f40016%2C8f40018%2C8f40019%2C8f4001a%2C8f40022%2C8f40032%2C8f40034%2C8f40042%2C8f40043%2C8f40044%2C8f4005b%2C11800075%2C1180007d%2C11800086%2C11800541%2C11800542%2C11800543%2C1180008b%2C11800580%2C11800581%2C11800582%2C11800583%2C1180058a%2C1180058c%2C1180058d%2C118005bd%2C118000a5%2C11800679%2C11800681%2C11800687%2C118006a5%2C118006a7%2C118000b1%2C118000b3%2C118000b5%2C118000b7%2C118000bc%2C118000cb%2C118000cf%2C118000d0%2C118000d1%2C118000d4%2C118000db%2C11800018%2C118000f4%2C118000fd%2C118009e8%2C118009ea%2C118000ff%2C11800101%2C11800108%2C1180010a%2C11800a6a%2C11800aa7%2C11800aa8%2C11800aa9%2C11800112%2C11800118%2C1180011d%2C11800125%2C1180012d%2C11800145%2C11800151%2C11800156%2C11800157%2C1180015b%2C1180016e%2C1180017e%2C11800182%2C11800187%2C11800188%2C11800192%2C118001a9%2C118001aa%2C1180002b%2C118001b0%2C118001b1%2C118001ec%2C118001f4%2C118001f9%2C11800212%2C11800228%2C1180022a%2C1180023a%2C1180023c%2C1180023d%2C1180023e%2C1180003a%2C1180025c%2C1180003d%2C118002b3%2C1180004a%2C1180004f%2C1180005f%2C16fc000b%2C16fc000c%2C16fc0085%2C16fc0091%2C16fc0002%2C16fc0014%2C16fc00d8%2C16fc010a%2C16fc0115%2C16fc0116%2C16fc001c%2C16fc001f%2C16fc0020%2C16fc0022%2C16fc0027%2C16fc002f%2C16fc0031%2C16fc0008%2C16fc0055%2C16fc0009%2C17d4005e%2C1f140000%2Cii1%7C2211%2Cffe0039a&quantity=0&ColumnSort=1000011&page=1&nstock=1&pageSize=25[Digi-Key]
+* https://www.mouser.de/Power/DC-DC-Converters/_/N-brvxe?P=1yx5k7vZ1yxt7f5&Rl=brvxeZgjdhnxZ1yxt78pZ1yxt74iSGT&Ns=Pricing|0[Mouser] 
+
+
+=== Overload Protection for LED strips (OPEN)
+
+If the LED strips connected to the controller draw more power than the power supply and/or the circuitry
+can handle, this could potentially cause damage.
+
+To prevent this, some kind of current limiter could be added to the circuitry feeding the LED strips.
+
+.Open questions:
+* How would the overcurrent protection work? Autonomous hardware, or with support from the firmware?
+* How about a current meter (with a I^2^C interface) that the firmware could read out? The current power draw
+  could be reported via MQTT, providing for a nice little feature.
+
+
+=== ESD Protection
+
+The following connections are accessible when the controller is inside a closed enclosure:
+
+* LED strip connectors.
+* Power supply jack.
+* Programming lines:
+** RX/TX
+** GND
+** Reset
+** Firmware flashing mode selector
+
+While ESD protection for a simple and cheap product as this is probably a bit overkill,
+adding it would teach me something new, so I'll like do it.
+
+To do:
+
+* Learn about different ESD protection techniques
+** Diodes to V+, one to V-.
+** Diodes only to V-.
+* Extend schematic.
+
+
+.Reading List
+* http://www.onsemi.com/pub/Collateral/TND335-D.PDF
+* https://www.onsemi.com/pub/Collateral/AND8231-D.PDF
