@@ -50,43 +50,48 @@ I ruled out building my own regulator circuit (e.g. based on LM2595 or LM2675).
 Instead, an all-in-one regulator module will be used.
 
 .Module Candidates
-[cols="1,1,1,1a,1,1a"]
+[%header,cols="2,1,1a,1,3a"]
 |===
-|Name |Manufacturer |Datasheet |Distributor Link |Price |Notes
+|Name +
+(Manufacturer)
+|Datasheet
+|Distributor 
+|Price
+|Notes
 
-|VXO7803-1000
-|CUI
+|VXO7803-1000 +
+(CUI)
 |https://www.cui.com/product/resource/digikeypdf/vxo78-1000.pdf[Datasheet]
 |https://www.digikey.de/product-detail/de/cui-inc/VXO7803-1000/102-4257-ND/7350296[Digi-Key],
 https://www.mouser.de/ProductDetail/CUI/VXO7803-1000?qs=sGAEpiMZZMsc0tfZmXiUnQ%252bwKZhbvwnu%252bcROBF%2f6Q16XdELjoC0Jhg%3d%3d[Mouser]
 |2.22-2.35{nbsp}€
 |
 
-|VX7803-1000
-|CUI
+|VX7803-1000 +
+(CUI)
 |https://www.cui.com/product/resource/digikeypdf/vx78-1000.pdf[Datasheet]
 |https://www.digikey.de/product-detail/de/cui-inc/VX7803-1000/102-4252-ND/7350291[Digi-Key]
 |2,80{nbsp}€
 |
 
-|R-78E3.3-1.0
-|Recom Power
+|R-78E3.3-1.0 +
+(Recom Power)
 |https://www.recom-power.com/pdf/Innoline/R-78Exx-1.0.pdf[Datasheet]
 |https://www.digikey.de/product-detail/de/recom-power/R-78E3.3-1.0/945-2409-5-ND/5327711[Digi-Key],
 https://www.mouser.de/ProductDetail/RECOM-Power/R-78E33-10?qs=sGAEpiMZZMsc0tfZmXiUnbaEjpYStdRIFUgifFXFkklVvzJFhjySMg%3d%3d[Mouser]
 |2,67-2,80{nbsp}€
 |
 
-|MEZD71201A-F
-|Monolithic Power Systems
+|MEZD71201A-F +
+(Monolithic Power Systems)
 |http://www.monolithicpower.com/pub/media/document/mEZD71201Ar1.5.pdf[Datasheet]
 |https://www.digikey.de/product-detail/de/monolithic-power-systems-inc/MEZD71201A-F/1589-1457-ND/6823820[Digi-Key],
 https://www.mouser.de/ProductDetail/Monolithic-Power-Systems-MPS/mEZD71201A-F?qs=sGAEpiMZZMsc0tfZmXiUnQ%252bwKZhbvwnunWq9oxKi2Cb1IKU3wZf98Q%3d%3d[Mouser]
 |2,76-2,90{nbsp}€
 |
 
-|TR10S3V3
-|XP Power
+|TR10S3V3 +
+(XP Power)
 |https://www.xppower.com/Portals/0/pdfs/SF_TR10.pdf[Datasheet]
 |https://www.digikey.de/product-detail/de/xp-power/TR10S3V3/1470-3970-ND/6707494[Digi-Key]
 |3,40{nbsp}€
