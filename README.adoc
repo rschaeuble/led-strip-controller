@@ -6,7 +6,9 @@ An LED strip controller for up to three RGB[W] LED strips, controlled over WiFi 
 == Current State
 
 * Hardware
-** Circuit schematic: nearly complete (for an initial version); some lines required for firmware programming are still missing.
+** Circuit schematic: nearly complete (for an initial version)
+*** Some lines required for firmware programming are still missing.
+*** 12-to-3.3{nbsp}V power regulator needs to be added.
 ** PCB layout: not yet started.
 * Software: prototype exists; will be released in the following weeks after some cleanup and polishing. 
 

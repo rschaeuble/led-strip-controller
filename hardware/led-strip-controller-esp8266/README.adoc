@@ -41,13 +41,13 @@ Adding some buffer, an 800{nbsp}mA power supply should suffice easily.
 
 == Design Consideration
 
-This section is collection of various design considerations.
+This section is a collection of various design considerations.
 
 === Switch Mode Power Supply: build your own or buy (OPEN)
 
 As this is my first real hardware project and given my complete lack of experience with switch mode power supplies,
 I ruled out building my own regulator circuit (e.g. based on LM2595 or LM2675).
-Instead, a all-in-one regulator module will be used.
+Instead, an all-in-one regulator module will be used.
 
 .Module Candidates
 [cols="1,1,1,1a,1,1a"]
@@ -126,7 +126,7 @@ The following connections are accessible when the controller is inside a closed 
 ** Firmware flashing mode selector
 
 While ESD protection for a simple and cheap product as this is probably a bit overkill,
-adding it would teach me something new, so I'll like do it.
+adding it would teach me something new, so I'll likely do it.
 
 To do:
 
