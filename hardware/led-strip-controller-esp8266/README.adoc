@@ -9,8 +9,6 @@ ESP-WROOM-02::
 +
 --
 Microcontroller with built-in WiFi.
-
-This module was chosen over the bare-bones ESP8266 chip because it is much simpler to integrate.
 --
 
 PCA9685::
