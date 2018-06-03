@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -115,10 +115,6 @@ Text Label 5700 3150 0    50   ~ 0
 SDA
 Text Label 5700 3050 0    50   ~ 0
 SCL
-Entry Wire Line
-	5600 2950 5700 3050
-Entry Wire Line
-	5600 3050 5700 3150
 Wire Wire Line
 	1900 3850 1800 3850
 Wire Wire Line
@@ -129,12 +125,6 @@ Text Label 1800 3950 0    50   ~ 0
 SCL
 Wire Wire Line
 	6500 2450 6500 2750
-Entry Bus Bus
-	5500 2750 5600 2850
-Entry Wire Line
-	1000 7350 1100 7250
-Entry Wire Line
-	1300 7350 1400 7250
 $Comp
 L Device:R R1
 U 1 1 5B0DFE1B
@@ -165,8 +155,6 @@ Wire Wire Line
 	1400 7250 1400 7150
 Text Label 1400 7250 0    50   ~ 0
 SCL
-Entry Bus Bus
-	800  7450 900  7350
 Wire Wire Line
 	1400 6850 1400 6750
 Wire Wire Line
@@ -187,24 +175,6 @@ Wire Wire Line
 Connection ~ 1250 6750
 Wire Wire Line
 	1250 6750 1400 6750
-$Sheet
-S 9700 2900 700  500 
-U 5B0F247D
-F0 "LED Strip 0" 50
-F1 "led-strip.sch" 50
-F2 "PWM0" I L 9700 3000 50 
-F3 "PWM1" I L 9700 3150 50 
-F4 "PWM2" I L 9700 3300 50 
-$EndSheet
-$Sheet
-S 9700 3600 700  500 
-U 5B0F6824
-F0 "LED Strip 1" 50
-F1 "led-strip.sch" 50
-F2 "PWM0" I L 9700 3700 50 
-F3 "PWM1" I L 9700 3850 50 
-F4 "PWM2" I L 9700 4000 50 
-$EndSheet
 $Comp
 L Driver_LED:PCA9685PW U2
 U 1 1 5B0DA7D4
@@ -216,145 +186,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 6100 4450 50  0001 C
 	1    6500 3750
 	1    0    0    -1  
 $EndComp
-Text Label 7200 3550 0    50   ~ 0
-LED1.2
-Text Label 7200 3450 0    50   ~ 0
-LED1.1
-Text Label 7200 3350 0    50   ~ 0
-LED1.0
-Text Label 7200 3250 0    50   ~ 0
-LED0.2
-Text Label 7200 3150 0    50   ~ 0
-LED0.1
-Text Label 7200 3050 0    50   ~ 0
-LED0.0
-Text Label 7200 3850 0    50   ~ 0
-LED2.2
-Text Label 7200 3750 0    50   ~ 0
-LED2.1
-Text Label 7200 3650 0    50   ~ 0
-LED2.0
-Wire Wire Line
-	7200 3050 7500 3050
-Wire Wire Line
-	7200 3150 7500 3150
-Wire Wire Line
-	7200 3250 7500 3250
-Wire Wire Line
-	7200 3350 7500 3350
-Wire Wire Line
-	7200 3450 7500 3450
-Wire Wire Line
-	7200 3550 7500 3550
-Wire Wire Line
-	7200 3650 7500 3650
-Wire Wire Line
-	7200 3750 7500 3750
-Wire Wire Line
-	7200 3850 7500 3850
-Text Label 9400 4000 0    50   ~ 0
-LED1.2
-Text Label 9400 3850 0    50   ~ 0
-LED1.1
-Text Label 9400 3700 0    50   ~ 0
-LED1.0
-Text Label 9400 3300 0    50   ~ 0
-LED0.2
-Text Label 9400 3150 0    50   ~ 0
-LED0.1
-Text Label 9400 3000 0    50   ~ 0
-LED0.0
-Text Label 9400 4700 0    50   ~ 0
-LED2.2
-Text Label 9400 4550 0    50   ~ 0
-LED2.1
-Text Label 9400 4400 0    50   ~ 0
-LED2.0
-Wire Wire Line
-	9700 3000 9400 3000
-Wire Wire Line
-	9700 3150 9400 3150
-Wire Wire Line
-	9700 3300 9400 3300
-Wire Wire Line
-	9700 3700 9400 3700
-Wire Wire Line
-	9700 3850 9400 3850
-Wire Wire Line
-	9700 4000 9400 4000
-Wire Wire Line
-	9700 4700 9400 4700
-Wire Wire Line
-	9700 4550 9400 4550
-Wire Wire Line
-	9700 4400 9400 4400
-Entry Wire Line
-	9300 3600 9400 3700
-Entry Wire Line
-	9300 3750 9400 3850
-Entry Wire Line
-	9300 3900 9400 4000
-Entry Wire Line
-	9300 4300 9400 4400
-Entry Wire Line
-	9300 4450 9400 4550
-Entry Wire Line
-	9300 4600 9400 4700
-Entry Wire Line
-	9300 3200 9400 3300
-Entry Wire Line
-	9300 3050 9400 3150
-Entry Wire Line
-	9300 2900 9400 3000
-Entry Wire Line
-	7500 3050 7600 3150
-Entry Wire Line
-	7500 3150 7600 3250
-Entry Wire Line
-	7500 3250 7600 3350
-Entry Wire Line
-	7500 3350 7600 3450
-Entry Wire Line
-	7500 3450 7600 3550
-Entry Wire Line
-	7500 3550 7600 3650
-Entry Wire Line
-	7500 3650 7600 3750
-Entry Wire Line
-	7500 3750 7600 3850
-Entry Wire Line
-	7500 3850 7600 3950
-Entry Bus Bus
-	9200 2650 9300 2750
-Entry Bus Bus
-	7600 4050 7700 4150
-$Sheet
-S 9700 4300 700  500 
-U 5B0F60EF
-F0 "LED Strip 2" 50
-F1 "led-strip.sch" 50
-F2 "PWM0" I L 9700 4400 50 
-F3 "PWM1" I L 9700 4550 50 
-F4 "PWM2" I L 9700 4700 50 
-$EndSheet
-Wire Wire Line
-	7200 3950 7300 3950
-Wire Wire Line
-	7200 4050 7300 4050
-Wire Wire Line
-	7200 4150 7300 4150
-Wire Wire Line
-	7200 4250 7300 4250
-Wire Wire Line
-	7200 4350 7300 4350
-Wire Wire Line
-	7200 4450 7300 4450
-NoConn ~ 7300 3950
-NoConn ~ 7300 4050
-NoConn ~ 7300 4150
-NoConn ~ 7300 4250
-NoConn ~ 7300 4350
-NoConn ~ 7300 4450
 Text Notes 1400 6450 2    50   ~ 10
 I2C Bus
 Wire Wire Line
@@ -365,7 +196,7 @@ U 1 1 5B1024CB
 P 2150 3100
 F 0 "C3" V 2100 3000 50  0000 C CNN
 F 1 "0.1uF" V 2100 3250 50  0000 C CNN
-F 2 "" H 2188 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 2188 2950 50  0001 C CNN
 F 3 "~" H 2150 3100 50  0001 C CNN
 	1    2150 3100
 	0    1    1    0   
@@ -376,7 +207,7 @@ U 1 1 5B102513
 P 2150 2900
 F 0 "C2" V 2100 2800 50  0000 C CNN
 F 1 "10uF" V 2100 3050 50  0000 C CNN
-F 2 "" H 2188 2750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 2188 2750 50  0001 C CNN
 F 3 "~" H 2150 2900 50  0001 C CNN
 	1    2150 2900
 	0    1    1    0   
@@ -430,7 +261,7 @@ U 1 1 5B10FA77
 P 1650 3350
 F 0 "R4" H 1720 3396 50  0000 L CNN
 F 1 "10k" H 1720 3305 50  0000 L CNN
-F 2 "" V 1580 3350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 1580 3350 50  0001 C CNN
 F 3 "~" H 1650 3350 50  0001 C CNN
 	1    1650 3350
 	1    0    0    -1  
@@ -445,7 +276,7 @@ U 1 1 5B1126B7
 P 1300 3650
 F 0 "C1" V 1250 3550 50  0000 C CNN
 F 1 "0.1uF" V 1250 3800 50  0000 C CNN
-F 2 "" H 1338 3500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 1338 3500 50  0001 C CNN
 F 3 "~" H 1300 3650 50  0001 C CNN
 	1    1300 3650
 	0    1    1    0   
@@ -502,7 +333,7 @@ U 1 1 5B122FD4
 P 1500 4050
 F 0 "R3" V 1293 4050 50  0000 C CNN
 F 1 "10k" V 1384 4050 50  0000 C CNN
-F 2 "" V 1430 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 1430 4050 50  0001 C CNN
 F 3 "~" H 1500 4050 50  0001 C CNN
 	1    1500 4050
 	0    1    1    0   
@@ -518,30 +349,8 @@ F 3 "" H 1350 4050 50  0001 C CNN
 	1    1350 4050
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 5B12317F
-P 1350 4450
-F 0 "JP1" V 1400 4700 50  0000 R CNN
-F 1 "Boot" V 1300 4750 50  0000 R CNN
-F 2 "" H 1350 4450 50  0001 C CNN
-F 3 "~" H 1350 4450 50  0001 C CNN
-	1    1350 4450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	1350 4250 1900 4250
-$Comp
-L power:GND #PWR0124
-U 1 1 5B124F61
-P 1350 4650
-F 0 "#PWR0124" H 1350 4400 50  0001 C CNN
-F 1 "GND" H 1355 4477 50  0000 C CNN
-F 2 "" H 1350 4650 50  0001 C CNN
-F 3 "" H 1350 4650 50  0001 C CNN
-	1    1350 4650
-	1    0    0    -1  
-$EndComp
+	1700 4250 1900 4250
 $Comp
 L power:GND #PWR0125
 U 1 1 5B125103
@@ -564,7 +373,6 @@ RX
 Text Label 3850 4150 0    50   ~ 0
 TX
 NoConn ~ 3850 3950
-NoConn ~ 3850 3850
 NoConn ~ 3850 3750
 NoConn ~ 3850 3650
 NoConn ~ 1900 4150
@@ -585,63 +393,10 @@ $EndComp
 Wire Wire Line
 	1450 3650 1650 3650
 Connection ~ 1650 3650
-$Comp
-L Connector:Conn_01x01_Male J4
-U 1 1 5B14931B
-P 3850 6900
-F 0 "J4" H 3956 7078 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 3956 6987 50  0000 C CNN
-F 2 "" H 3850 6900 50  0001 C CNN
-F 3 "~" H 3850 6900 50  0001 C CNN
-	1    3850 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J5
-U 1 1 5B1493A6
-P 3850 7150
-F 0 "J5" H 3956 7328 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 3956 7237 50  0000 C CNN
-F 2 "" H 3850 7150 50  0001 C CNN
-F 3 "~" H 3850 7150 50  0001 C CNN
-	1    3850 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J6
-U 1 1 5B1493D8
-P 3850 7400
-F 0 "J6" H 3956 7578 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 3956 7487 50  0000 C CNN
-F 2 "" H 3850 7400 50  0001 C CNN
-F 3 "~" H 3850 7400 50  0001 C CNN
-	1    3850 7400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4050 6900 4850 6900
-Wire Wire Line
-	4050 7150 4850 7150
-Wire Wire Line
-	4050 7400 4850 7400
-Text Label 4850 6900 2    50   ~ 0
-RX
-Text Label 4850 7150 2    50   ~ 0
-TX
-Text Label 4850 7400 2    50   ~ 0
+	7200 4550 7500 4550
+Text Label 7200 4550 0    50   ~ 0
 TRIGGER
-Wire Wire Line
-	7200 4550 7600 4550
-Text Label 7300 4550 0    50   ~ 0
-TRIGGER
-Wire Bus Line
-	900  7350 1300 7350
-Wire Bus Line
-	5600 2850 5600 3050
-Wire Bus Line
-	9300 2750 9300 4600
-Wire Bus Line
-	7600 3150 7600 4050
 $Comp
 L power:GND #PWR0127
 U 1 1 5B1626F4
@@ -709,9 +464,89 @@ F 3 "~" H 5750 7200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Sheet
-S 2050 800  1200 850 
-U 5B1630AD
-F0 "Power Supply" 50
-F1 "power-supply.sch" 50
+S 9250 1550 750  300 
+U 5B138A36
+F0 "LED Strips" 50
+F1 "led-strips.sch" 50
+F2 "LED_PWM[1..12]" I L 9250 1700 50 
 $EndSheet
+Text Label 7200 4350 0    50   ~ 0
+LED_PWM11
+Text Label 7200 4250 0    50   ~ 0
+LED_PWM10
+Text Label 7200 4150 0    50   ~ 0
+LED_PWM9
+Text Label 7200 4050 0    50   ~ 0
+LED_PWM8
+Text Label 7200 3950 0    50   ~ 0
+LED_PWM7
+Text Label 7200 3850 0    50   ~ 0
+LED_PWM6
+Text Label 7200 3750 0    50   ~ 0
+LED_PWM5
+Text Label 7200 3650 0    50   ~ 0
+LED_PWM4
+Text Label 7200 3550 0    50   ~ 0
+LED_PWM3
+Text Label 7200 3450 0    50   ~ 0
+LED_PWM2
+Text Label 7200 3350 0    50   ~ 0
+LED_PWM1
+Text Label 1900 4250 2    50   ~ 0
+BOOT
+Text Label 8600 1700 0    50   ~ 0
+LED_PWM[1..12]
+Wire Bus Line
+	8550 1700 9250 1700
+Text Label 7200 4450 0    50   ~ 0
+LED_PWM12
+NoConn ~ 7200 3250
+NoConn ~ 7200 3150
+NoConn ~ 7200 3050
+$Comp
+L Connector:Conn_01x05_Female J2
+U 1 1 5B1D05AE
+P 2700 7650
+F 0 "J2" V 2547 7898 50  0000 L CNN
+F 1 "Conn_01x05_Female" V 2638 7898 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 2700 7650 50  0001 C CNN
+F 3 "~" H 2700 7650 50  0001 C CNN
+	1    2700 7650
+	0    1    1    0   
+$EndComp
+Text Label 2500 7450 1    50   ~ 0
+RX
+Text Label 2600 7450 1    50   ~ 0
+TX
+Text Label 2700 7450 1    50   ~ 0
+BOOT
+Text Label 2800 7450 1    50   ~ 0
+RESET
+Text Label 2900 7450 1    50   ~ 0
+GND
+$Comp
+L Connector:Test_Point TP1
+U 1 1 5B1D2682
+P 7500 4550
+F 0 "TP1" V 7454 4738 50  0000 L CNN
+F 1 "Test_Point" V 7545 4738 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 7700 4550 50  0001 C CNN
+F 3 "~" H 7700 4550 50  0001 C CNN
+	1    7500 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 7450 2800 7200
+Wire Wire Line
+	2900 7450 2900 7200
+Wire Wire Line
+	2700 7450 2700 7200
+Wire Wire Line
+	2600 7450 2600 7200
+Wire Wire Line
+	2500 7450 2500 7200
+Text Label 3850 3850 0    50   ~ 0
+RESET
+Wire Wire Line
+	3850 3850 4100 3850
 $EndSCHEMATC
