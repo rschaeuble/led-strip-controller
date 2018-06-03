@@ -459,17 +459,6 @@ LED_PWM12
 NoConn ~ 7200 1800
 NoConn ~ 7200 1700
 NoConn ~ 7200 1600
-$Comp
-L Connector:Conn_01x05_Female J2
-U 1 1 5B1D05AE
-P 7800 5900
-F 0 "J2" V 7647 6148 50  0000 L CNN
-F 1 "Conn_01x05_Female" V 7738 6148 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 7800 5900 50  0001 C CNN
-F 3 "~" H 7800 5900 50  0001 C CNN
-	1    7800 5900
-	0    1    1    0   
-$EndComp
 Text Label 7600 5700 1    50   ~ 0
 RX
 Text Label 7700 5700 1    50   ~ 0
@@ -622,4 +611,28 @@ F 3 "" H 6800 1300 50  0001 C CNN
 	1    6800 1300
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 5B1424CF
+P 7800 5900
+F 0 "J?" V 7647 6148 50  0000 L CNN
+F 1 "Conn_01x06_Female" V 7900 5600 50  0000 L CNN
+F 2 "" H 7800 5900 50  0001 C CNN
+F 3 "~" H 7800 5900 50  0001 C CNN
+	1    7800 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B1425F3
+P 7500 5450
+F 0 "#PWR?" H 7500 5300 50  0001 C CNN
+F 1 "+3.3V" V 7500 5700 50  0000 C CNN
+F 2 "" H 7500 5450 50  0001 C CNN
+F 3 "" H 7500 5450 50  0001 C CNN
+	1    7500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5700 7500 5450
 $EndSCHEMATC
