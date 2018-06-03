@@ -3,6 +3,16 @@
 :sectnums:
 :icons: font
 
+== Hardware Design
+
+Schematic and PCB layout are created using KiCad 5. The project files can be found in the `hardware` directory.
+
+Exports for viewing without KiCad also exist. These should (hopefully) be pretty up-to-date.
+
+.Exports:
+* link:exports/led-strip-controller-esp8266.pdf[Schematic]
+
+
 == Main Components
 
 ESP-WROOM-02::
