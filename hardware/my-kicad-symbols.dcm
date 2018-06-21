@@ -1,3 +1,39 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP DMN3018SSD
+D 6.7A Id, 30V Vds, Dual N-Channel MOSFET, 22mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf
+$ENDCMP
+#
+$CMP FDS6890A
+D 7.5A Id, 20V Vds, Dual N-Channel MOSFET, 18mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F http://www.fairchildsemi.com/ds/FD/FDS6890A.pdf
+$ENDCMP
+#
+$CMP FDS6892A
+D 7.5A Id, 20V Vds, Dual N-Channel MOSFET PWM Optimized, 18mOhm Ron, SO-8
+K Dual N-Channel MOSFET Low Gate Charge
+F http://www.fairchildsemi.com/ds/FD/FDS6892A.pdf
+$ENDCMP
+#
+$CMP FDS6898A
+D 9.4A Id, 20V Vds, Dual N-Channel MOSFET, 14mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F http://www.fairchildsemi.com/ds/FD/FDS6898A.pdf
+$ENDCMP
+#
+$CMP FDS9926A
+D 6.5A Id, 20V Vds, Dual N-Channel MOSFET, 30mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F http://www.fairchildsemi.com/ds/FD/FDS9926A.pdf
+$ENDCMP
+#
+$CMP STS2DNE60
+D 2A Id, 60V Vds, Dual N-Channel MOSFET, 180mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F www.st.com/resource/en/datasheet/CD00001537.pdf
+$ENDCMP
+#
 #End Doc Library
