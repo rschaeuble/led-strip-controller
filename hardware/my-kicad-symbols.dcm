@@ -36,4 +36,10 @@ K Dual N-Channel MOSFET
 F www.st.com/resource/en/datasheet/CD00001537.pdf
 $ENDCMP
 #
+$CMP TVS3V3L4U
+D TVS Diode, 2/4 channels, 3.3/7.7 V
+K TVS ESD surve
+F https://www.infineon.com/dgdl/TVS3V3L4U_rev_2_2.pdf?folderId=db3a30431f848401011fcbf2ab4c04c4&fileId=db3a3043382e837301385be7912532ed
+$ENDCMP
+#
 #End Doc Library
