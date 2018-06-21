@@ -1,3 +1,4 @@
 (sym_lib_table
+  (lib (name my-kicad-symbols)(type Legacy)(uri C:/dev/led-strip-controller/hardware/my-kicad-symbols.lib)(options "")(descr ""))
   (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/../../3rd-party/kicad-libs/kicad-ESP8266/ESP8266.lib)(options "")(descr ""))
 )
