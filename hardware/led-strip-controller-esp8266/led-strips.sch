@@ -14,34 +14,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Transistor_FET:IRLZ44N Q12
-U 1 1 5B13A31D
-P 2750 2600
-F 0 "Q12" H 2600 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 2700 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3000 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2750 2600 50  0001 L CNN
-	1    2750 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 2800 2850 3050
 Wire Wire Line
 	2550 2600 2550 2450
 Entry Wire Line
 	2450 2350 2550 2450
-$Comp
-L Transistor_FET:IRLZ44N Q11
-U 1 1 5B13F5F0
-P 3250 2600
-F 0 "Q11" H 3100 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 3200 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3500 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 3250 2600 50  0001 L CNN
-	1    3250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 2800 3350 3050
 Wire Wire Line
@@ -59,68 +37,24 @@ F 3 "" H 8350 3150 50  0001 C CNN
 	1    8350 3150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:IRLZ44N Q10
-U 1 1 5B146B04
-P 3750 2600
-F 0 "Q10" H 3600 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 3700 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4000 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 3750 2600 50  0001 L CNN
-	1    3750 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3850 2800 3850 3050
 Wire Wire Line
 	3550 2600 3550 2450
 Entry Wire Line
 	3450 2350 3550 2450
-$Comp
-L Transistor_FET:IRLZ44N Q9
-U 1 1 5B146B0E
-P 4250 2600
-F 0 "Q9" H 4100 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 4200 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4500 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4250 2600 50  0001 L CNN
-	1    4250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4350 2800 4350 3050
 Wire Wire Line
 	4050 2600 4050 2450
 Entry Wire Line
 	3950 2350 4050 2450
-$Comp
-L Transistor_FET:IRLZ44N Q8
-U 1 1 5B146C96
-P 4750 2600
-F 0 "Q8" H 4600 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 4700 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5000 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4750 2600 50  0001 L CNN
-	1    4750 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 2800 4850 3050
 Wire Wire Line
 	4550 2600 4550 2450
 Entry Wire Line
 	4450 2350 4550 2450
-$Comp
-L Transistor_FET:IRLZ44N Q7
-U 1 1 5B146CA0
-P 5250 2600
-F 0 "Q7" H 5100 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 5200 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5500 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 5250 2600 50  0001 L CNN
-	1    5250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5350 2800 5350 3050
 Wire Wire Line
@@ -129,34 +63,12 @@ Entry Wire Line
 	4950 2350 5050 2450
 Wire Wire Line
 	5350 2400 5350 2100
-$Comp
-L Transistor_FET:IRLZ44N Q6
-U 1 1 5B146CAC
-P 5750 2600
-F 0 "Q6" H 5600 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 5700 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6000 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 5750 2600 50  0001 L CNN
-	1    5750 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 2800 5850 3050
 Wire Wire Line
 	5550 2600 5550 2450
 Entry Wire Line
 	5450 2350 5550 2450
-$Comp
-L Transistor_FET:IRLZ44N Q5
-U 1 1 5B146CB6
-P 6250 2600
-F 0 "Q5" H 6100 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 6200 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6500 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 6250 2600 50  0001 L CNN
-	1    6250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 2800 6350 3050
 Wire Wire Line
@@ -165,68 +77,24 @@ Entry Wire Line
 	5950 2350 6050 2450
 Wire Wire Line
 	5850 2100 5850 2400
-$Comp
-L Transistor_FET:IRLZ44N Q4
-U 1 1 5B1470AF
-P 6750 2600
-F 0 "Q4" H 6600 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 6700 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7000 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 6750 2600 50  0001 L CNN
-	1    6750 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6850 2800 6850 3050
 Wire Wire Line
 	6550 2600 6550 2450
 Entry Wire Line
 	6450 2350 6550 2450
-$Comp
-L Transistor_FET:IRLZ44N Q3
-U 1 1 5B1470B9
-P 7250 2600
-F 0 "Q3" H 7100 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 7200 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7500 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 7250 2600 50  0001 L CNN
-	1    7250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 2800 7350 3050
 Wire Wire Line
 	7050 2600 7050 2450
 Entry Wire Line
 	6950 2350 7050 2450
-$Comp
-L Transistor_FET:IRLZ44N Q2
-U 1 1 5B1470C5
-P 7750 2600
-F 0 "Q2" H 7600 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 7700 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8000 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 7750 2600 50  0001 L CNN
-	1    7750 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 2800 7850 3050
 Wire Wire Line
 	7550 2600 7550 2450
 Entry Wire Line
 	7450 2350 7550 2450
-$Comp
-L Transistor_FET:IRLZ44N Q1
-U 1 1 5B1470CF
-P 8250 2600
-F 0 "Q1" H 8100 2750 50  0000 L CNN
-F 1 "IRLZ44N" V 8200 2200 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8500 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 8250 2600 50  0001 L CNN
-	1    8250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8350 2800 8350 3050
 Wire Wire Line
@@ -442,8 +310,150 @@ Text Label 7550 2450 3    50   ~ 0
 PWM2
 Text Label 8050 2450 3    50   ~ 0
 PWM1
-Wire Bus Line
-	2150 2350 7950 2350
 Text Label 2250 2350 3    50   ~ 0
 PWM[1..12]
+$Comp
+L my-kicad-symbols:DMN3018SSD Q6
+U 2 1 5B314A66
+P 2750 2600
+F 0 "Q6" H 2600 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 2700 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2950 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 2750 2600 50  0001 L CNN
+	2    2750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L my-kicad-symbols:DMN3018SSD Q6
+U 1 1 5B314ACF
+P 3250 2600
+F 0 "Q6" H 3100 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 3200 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3450 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 3250 2600 50  0001 L CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+Text Label 8050 2450 3    50   ~ 0
+PWM11
+$Comp
+L my-kicad-symbols:DMN3018SSD Q1
+U 2 1 5B31A8B7
+P 7750 2600
+F 0 "Q1" H 7600 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 7700 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7950 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 7750 2600 50  0001 L CNN
+	2    7750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L my-kicad-symbols:DMN3018SSD Q1
+U 1 1 5B31A8BD
+P 8250 2600
+F 0 "Q1" H 8100 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 8200 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 8250 2600 50  0001 L CNN
+	1    8250 2600
+	1    0    0    -1  
+$EndComp
+Text Label 4050 2450 3    50   ~ 0
+PWM11
+$Comp
+L my-kicad-symbols:DMN3018SSD Q5
+U 2 1 5B31BFD4
+P 3750 2600
+F 0 "Q5" H 3600 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 3700 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3950 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 3750 2600 50  0001 L CNN
+	2    3750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L my-kicad-symbols:DMN3018SSD Q5
+U 1 1 5B31BFDA
+P 4250 2600
+F 0 "Q5" H 4100 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 4200 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4450 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4250 2600 50  0001 L CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+Text Label 5050 2450 3    50   ~ 0
+PWM11
+$Comp
+L my-kicad-symbols:DMN3018SSD Q4
+U 2 1 5B31D709
+P 4750 2600
+F 0 "Q4" H 4600 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 4700 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4950 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 4750 2600 50  0001 L CNN
+	2    4750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L my-kicad-symbols:DMN3018SSD Q4
+U 1 1 5B31D70F
+P 5250 2600
+F 0 "Q4" H 5100 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 5200 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5450 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 5250 2600 50  0001 L CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Text Label 6050 2450 3    50   ~ 0
+PWM11
+$Comp
+L my-kicad-symbols:DMN3018SSD Q3
+U 2 1 5B31EE46
+P 5750 2600
+F 0 "Q3" H 5600 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 5700 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5950 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 5750 2600 50  0001 L CNN
+	2    5750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L my-kicad-symbols:DMN3018SSD Q3
+U 1 1 5B31EE4C
+P 6250 2600
+F 0 "Q3" H 6100 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 6200 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6450 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 6250 2600 50  0001 L CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+Text Label 7050 2450 3    50   ~ 0
+PWM11
+$Comp
+L my-kicad-symbols:DMN3018SSD Q2
+U 2 1 5B3205AA
+P 6750 2600
+F 0 "Q2" H 6600 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 6700 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6950 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 6750 2600 50  0001 L CNN
+	2    6750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L my-kicad-symbols:DMN3018SSD Q2
+U 1 1 5B3205B0
+P 7250 2600
+F 0 "Q2" H 7100 2750 50  0000 L CNN
+F 1 "DMN3018SSD" V 7200 2000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7450 2525 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3018SSD.pdf" H 7250 2600 50  0001 L CNN
+	1    7250 2600
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	2150 2350 7950 2350
 $EndSCHEMATC

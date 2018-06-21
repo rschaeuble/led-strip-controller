@@ -459,15 +459,15 @@ LED_PWM12
 NoConn ~ 7200 1800
 NoConn ~ 7200 1700
 NoConn ~ 7200 1600
-Text Label 7600 5700 1    50   ~ 0
+Text Label 6850 5000 0    50   ~ 0
 RX
-Text Label 7700 5700 1    50   ~ 0
+Text Label 6850 5100 0    50   ~ 0
 TX
-Text Label 7800 5700 1    50   ~ 0
+Text Label 6850 5200 0    50   ~ 0
 BOOT
-Text Label 7900 5700 1    50   ~ 0
+Text Label 6850 5300 0    50   ~ 0
 RESET
-Text Label 8000 5700 1    50   ~ 0
+Text Label 6850 5400 0    50   ~ 0
 GND
 $Comp
 L Connector:Test_Point TP1
@@ -480,16 +480,6 @@ F 3 "~" H 7700 3100 50  0001 C CNN
 	1    7500 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7900 5700 7900 5450
-Wire Wire Line
-	8000 5700 8000 5450
-Wire Wire Line
-	7800 5700 7800 5450
-Wire Wire Line
-	7700 5700 7700 5450
-Wire Wire Line
-	7600 5700 7600 5450
 Text Label 3750 2300 0    50   ~ 0
 RESET
 Wire Wire Line
@@ -562,7 +552,7 @@ F 3 "" H 9900 5800 50  0001 C CNN
 	1    9900 5800
 	0    -1   -1   0   
 $EndComp
-Text Notes 8250 5100 0    50   ~ 10
+Text Notes 7700 4600 0    50   ~ 10
 External connectors
 $Comp
 L Connector:Barrel_Jack J3
@@ -612,27 +602,74 @@ F 3 "" H 6800 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Female J?
-U 1 1 5B1424CF
-P 7800 5900
-F 0 "J?" V 7647 6148 50  0000 L CNN
-F 1 "Conn_01x06_Female" V 7900 5600 50  0000 L CNN
-F 2 "" H 7800 5900 50  0001 C CNN
-F 3 "~" H 7800 5900 50  0001 C CNN
-	1    7800 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5B1425F3
-P 7500 5450
-F 0 "#PWR?" H 7500 5300 50  0001 C CNN
-F 1 "+3.3V" V 7500 5700 50  0000 C CNN
-F 2 "" H 7500 5450 50  0001 C CNN
-F 3 "" H 7500 5450 50  0001 C CNN
-	1    7500 5450
+L my-kicad-symbols:TVS3V3L4U D1
+U 1 1 5B2E1334
+P 7650 5850
+F 0 "D1" H 7650 6215 50  0000 C CNN
+F 1 "TVS3V3L4U" H 7650 6124 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 6575 6300 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/TVS3V3L4U_rev_2_2.pdf?folderId=db3a30431f848401011fcbf2ab4c04c4&fileId=db3a3043382e837301385be7912532ed" H 6575 6300 50  0001 C CNN
+	1    7650 5850
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5B2E1489
+P 7650 6200
+F 0 "#PWR0109" H 7650 5950 50  0001 C CNN
+F 1 "GND" H 7655 6027 50  0000 C CNN
+F 2 "" H 7650 6200 50  0001 C CNN
+F 3 "" H 7650 6200 50  0001 C CNN
+	1    7650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J2
+U 1 1 5B2EA1F5
+P 6650 5200
+F 0 "J2" H 6600 4850 50  0000 C CNN
+F 1 "Conn_01x05_Female" V 6750 5200 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 6650 5200 50  0001 C CNN
+F 3 "~" H 6650 5200 50  0001 C CNN
+	1    6650 5200
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	7500 5700 7500 5450
+	6850 5000 7150 5000
+Wire Wire Line
+	6850 5100 7250 5100
+Wire Wire Line
+	6850 5200 8050 5200
+Wire Wire Line
+	7150 5000 7150 5750
+Wire Wire Line
+	7150 5750 7350 5750
+Connection ~ 7150 5000
+Wire Wire Line
+	7150 5000 8300 5000
+Wire Wire Line
+	7250 5100 7250 5950
+Wire Wire Line
+	7250 5950 7350 5950
+Connection ~ 7250 5100
+Wire Wire Line
+	7250 5100 8300 5100
+Wire Wire Line
+	7950 5750 8050 5750
+Wire Wire Line
+	7950 5950 8150 5950
+Wire Wire Line
+	6850 5300 8150 5300
+Wire Wire Line
+	6850 5400 8300 5400
+Wire Wire Line
+	8050 5750 8050 5200
+Connection ~ 8050 5200
+Wire Wire Line
+	8050 5200 8300 5200
+Wire Wire Line
+	8150 5950 8150 5300
+Connection ~ 8150 5300
+Wire Wire Line
+	8150 5300 8300 5300
 $EndSCHEMATC
